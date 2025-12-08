@@ -36,7 +36,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col items-center justify-center text-center">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">Home Page</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">Home Page (Staging)</h1>
           <p className="text-xl text-gray-600 max-w-2xl">
             Welcome to our electrician services website. This is a placeholder for the home page
             content.
