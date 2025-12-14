@@ -49,7 +49,7 @@ export default function RootLayout({
         <LocalBusinessJsonLd />
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

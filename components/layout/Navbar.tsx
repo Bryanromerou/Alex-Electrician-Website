@@ -4,13 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { MenuIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Container } from "./Container";
 import { siteBranding } from "@/constants/branding";
 import { mainNavLinks } from "@/constants/navigation";
@@ -22,10 +16,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Container>
-        <nav
-          className="flex h-16 items-center justify-between"
-          aria-label="Main navigation"
-        >
+        <nav className="flex h-16 items-center justify-between" aria-label="Main navigation">
           {/* Logo */}
           <Link
             href="/"
@@ -68,9 +59,7 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <SheetHeader>
-                <SheetTitle className="text-left">
-                  {siteBranding.businessName}
-                </SheetTitle>
+                <SheetTitle className="text-left">{siteBranding.businessName}</SheetTitle>
               </SheetHeader>
               <nav className="mt-8 flex flex-col space-y-4" aria-label="Mobile navigation">
                 {mainNavLinks.map((link) => (
@@ -102,4 +91,3 @@ export function Navbar() {
     </header>
   );
 }
-

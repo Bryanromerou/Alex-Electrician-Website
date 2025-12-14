@@ -6,25 +6,33 @@ export const mainNavLinks: NavLink[] = [
     label: "Home",
   },
   {
-    href: "/about",
-    label: "About",
+    href: "/heating",
+    label: "Heating",
+  },
+  {
+    href: "/air-conditioning",
+    label: "Air Conditioning",
+  },
+  {
+    href: "/electrical",
+    label: "Electrical",
   },
   {
     href: "/services",
     label: "Services",
   },
-  {
-    href: "/testimonials",
-    label: "Testimonials",
-  },
+  // {
+  //   href: "/testimonials",
+  //   label: "Testimonials",
+  // },
   {
     href: "/gallery",
     label: "Gallery",
   },
-  {
-    href: "/faq",
-    label: "FAQ",
-  },
+  // {
+  //   href: "/faq",
+  //   label: "FAQ",
+  // },
   {
     href: "/contact",
     label: "Contact",
@@ -65,4 +73,3 @@ export const footerLinks: NavLink[] = [
     label: "Privacy Policy",
   },
 ];
-

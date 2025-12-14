@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "./SectionHeader";
 import { ServiceCard } from "@/components/cards/ServiceCard";
@@ -8,7 +7,7 @@ import { services } from "@/constants/services";
 
 export function ServicesSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="pt-16 md:pb-24">
       <Container>
         <SectionHeader
           eyebrow="Our Services"
