@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { GalleryItem } from "@/types/content";

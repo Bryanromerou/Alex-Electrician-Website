@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "./SectionHeader";
 import {

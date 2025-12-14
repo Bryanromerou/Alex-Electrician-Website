@@ -1,6 +1,5 @@
 import InformationalFooter from "@/components/cards/InformationalFooter";
 import ListWithChecks from "@/components/lists/ListWithChecks";
-import { SectionHeader } from "@/components/sections/SectionHeader";
 import { TwoColorHeading } from "@/components/ui/two-color-heading";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";

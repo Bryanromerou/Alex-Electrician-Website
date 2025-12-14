@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { services } from "@/constants/services";
-import { slugify, unslugify } from "@/lib/utils";
+import { slugify } from "@/lib/utils";
 import { ServiceCard } from "@/components/cards/ServiceCard";
 
 // Generate static params for all services at build time

@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
 import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import { Container } from "./Container";
@@ -18,9 +17,7 @@ export function Footer() {
           {/* Business Info */}
           <div className="space-y-4">
             <h3 className="font-bold text-lg">{siteBranding.businessName}</h3>
-            <p className="text-sm text-muted-foreground">
-              {siteBranding.tagline}
-            </p>
+            <p className="text-sm text-muted-foreground">{siteBranding.tagline}</p>
           </div>
 
           {/* Contact Info */}
@@ -123,4 +120,3 @@ export function Footer() {
     </footer>
   );
 }
-
