@@ -37,6 +37,10 @@ export const mainNavLinks: NavLink[] = [
     href: "/contact",
     label: "Contact",
   },
+  {
+    href: "/temp",
+    label: "Temp",
+  },
 ];
 
 export const footerLinks: NavLink[] = [
