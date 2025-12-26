@@ -1,6 +1,8 @@
 import { Section } from "@/components/ui/section";
 import { SplitFeature } from "@/components/split-feature";
 import { OptionsBand } from "@/components/options-band";
+import HCAVRepair from "@/images/stock-images/HCAVRepair.jpg";
+import { HEATING_OPTIONS } from "./constants";
 
 export default function TempPage() {
   return (
@@ -23,7 +25,7 @@ export default function TempPage() {
               <p className="mt-3">Contact us today to schedule a free consultation.</p>
             </>
           }
-          imageSrc="/images/heating-hero.jpg"
+          imageSrc={HCAVRepair.src}
           imageAlt="Technician working on HVAC"
         />
       </Section>
@@ -31,12 +33,10 @@ export default function TempPage() {
       <Section variant="blue">
         <OptionsBand
           title="We Offer Various Heating System Options"
-          images={[
-            { src: "/images/opt-1.jpg", alt: "Service 1" },
-            { src: "/images/opt-2.jpg", alt: "Service 2" },
-            { src: "/images/opt-3.jpg", alt: "Service 3" },
-            { src: "/images/opt-4.jpg", alt: "Service 4" },
-          ]}
+          images={HEATING_OPTIONS.map((option) => ({
+            src: option.imageSrc,
+            alt: option.imageAlt,
+          }))}
         />
       </Section>
 

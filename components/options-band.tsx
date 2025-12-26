@@ -10,12 +10,10 @@ export function OptionsBand({
   return (
     <div className="mx-auto max-w-6xl">
       <h3 className="text-center text-2xl font-semibold">{title}</h3>
-
-      {/* KEY: justify-items-center + items have fixed-ish width OR w-full */}
       <div className="mt-10 grid justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {images.map((img) => (
+        {images.map((img, index) => (
           <div
-            key={img.src}
+            key={index}
             className="w-full max-w-[260px] overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/15"
           >
             <Image

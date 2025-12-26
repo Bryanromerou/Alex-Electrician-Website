@@ -1,8 +1,8 @@
-import CashIcon from "@/images/cash.png";
-import VisaIcon from "@/images/visa.png";
-import MastercardIcon from "@/images/mastercard.png";
-import Check from "@/images/check.png";
-import OACIcon from "@/images/oac_alt.png";
+import CashIcon from "@/images/icons/cash.png";
+import VisaIcon from "@/images/icons/visa.png";
+import MastercardIcon from "@/images/icons/mastercard.png";
+import Check from "@/images/icons/check.png";
+import OACIcon from "@/images/icons/oac_alt.png";
 
 const InformationalFooter = () => {
   return (

@@ -8,6 +8,8 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { Container } from "./Container";
 import { siteBranding } from "@/constants/branding";
 import { mainNavLinks } from "@/constants/navigation";
+import Logo from "@/images/ClimaVoltLogoTrans.png";
+
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -23,7 +25,7 @@ export function Navbar() {
             className="flex items-center space-x-2 font-bold text-lg hover:opacity-80 transition-opacity"
             aria-label={`${siteBranding.businessName} - Home`}
           >
-            <span className="text-primary">{siteBranding.businessName}</span>
+            <img src={Logo.src} alt={siteBranding.businessName} />
           </Link>
 
           {/* Desktop Navigation */}
