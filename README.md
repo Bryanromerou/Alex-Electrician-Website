@@ -1,6 +1,6 @@
 # BrightSpark Electrical Website
 
-A modern, professional website for BrightSpark Electrical Services built with Next.js, TypeScript, and Tailwind CSS. This website showcases electrical services, customer testimonials, project galleries, and provides a contact form for potential clients.
+A modern, professional website for Climavolt built with Next.js, TypeScript, and Tailwind CSS. This website showcases electrical services, customer testimonials, project galleries, and provides a contact form for potential clients.
 
 ## 📋 Description
 

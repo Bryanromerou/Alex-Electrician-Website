@@ -3,11 +3,11 @@ import { Container } from "@/components/layout/Container";
 import { GalleryGrid } from "@/components/sections/GalleryGrid";
 
 export const metadata: Metadata = {
-  title: "Gallery | BrightSpark Electrical Services",
+  title: "Gallery | Climavolt",
   description:
     "Browse our portfolio of completed electrical projects. See examples of our quality workmanship for residential and commercial electrical installations in Los Angeles.",
   openGraph: {
-    title: "Gallery | BrightSpark Electrical Services",
+    title: "Gallery | Climavolt",
     description:
       "Browse our portfolio of completed electrical projects. See examples of our quality workmanship for residential and commercial electrical installations in Los Angeles.",
     url: "https://www.brightspark-electrical.com/gallery",

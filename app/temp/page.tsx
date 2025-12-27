@@ -70,7 +70,6 @@ export default function TempPage() {
             </p>
           </div>
 
-          {/* “big image” right like your screenshot */}
           <div className="overflow-hidden rounded-none md:rounded-2xl">
             <img
               src="/images/big-room-ac.jpg"

@@ -22,15 +22,15 @@ export async function generateMetadata({
 
   if (!service) {
     return {
-      title: "Service Not Found | BrightSpark Electrical Services",
+      title: "Service Not Found | Climavolt",
     };
   }
 
   return {
-    title: `${service.title} | BrightSpark Electrical Services`,
+    title: `${service.title} | Climavolt`,
     description: service.shortDescription,
     openGraph: {
-      title: `${service.title} | BrightSpark Electrical Services`,
+      title: `${service.title} | Climavolt`,
       description: service.shortDescription,
       url: `https://www.brightspark-electrical.com/service/${serviceName}`,
     },

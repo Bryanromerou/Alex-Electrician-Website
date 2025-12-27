@@ -1,7 +1,7 @@
 import type { SiteBranding } from "@/types/content";
 
 export const siteBranding: SiteBranding = {
-  businessName: "BrightSpark Electrical Services",
+  businessName: "Climavolt",
   tagline: "Reliable Residential & Commercial Electricians",
   phoneNumber: "555-123-4567",
   email: "info@brightspark-electrical.com",
@@ -16,4 +16,3 @@ export const siteBranding: SiteBranding = {
   },
   serviceAreas: ["Los Angeles", "Pasadena", "Glendale", "Burbank", "Santa Monica"],
 };
-

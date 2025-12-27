@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MenuIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -11,24 +11,29 @@ import { mainNavLinks } from "@/constants/navigation";
 import Logo from "@/images/ClimaVoltLogoTrans.png";
 
 import { cn } from "@/lib/utils";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
+  useEffect(() => {
+    if (!isMobile && isOpen) {
+      setIsOpen(false);
+    }
+  }, [isMobile]);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Container>
         <nav className="flex h-16 items-center justify-between" aria-label="Main navigation">
-          {/* Logo */}
           <Link
             href="/"
             className="flex items-center space-x-2 font-bold text-lg hover:opacity-80 transition-opacity"
             aria-label={`${siteBranding.businessName} - Home`}
           >
-            <img src={Logo.src} alt={siteBranding.businessName} />
+            <img src={Logo.src} alt={siteBranding.businessName} className="w-[160px]" />
           </Link>
-
-          {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-6">
             {mainNavLinks.map((link) => (
               <Link
@@ -41,7 +46,6 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Desktop CTA Button */}
           <div className="hidden md:flex md:items-center">
             <Button asChild size="sm">
               <a href={`tel:${siteBranding.phoneNumber}`}>

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | BrightSpark Electrical Services",
+  title: "About Us | Climavolt",
   description:
-    "Learn about BrightSpark Electrical Services, our experienced team of licensed electricians, and our commitment to quality electrical work in Los Angeles.",
+    "Learn about Climavolt, our experienced team of licensed electricians, and our commitment to quality electrical work in Los Angeles.",
   openGraph: {
-    title: "About Us | BrightSpark Electrical Services",
+    title: "About Us | Climavolt",
     description:
-      "Learn about BrightSpark Electrical Services, our experienced team of licensed electricians, and our commitment to quality electrical work in Los Angeles.",
+      "Learn about Climavolt, our experienced team of licensed electricians, and our commitment to quality electrical work in Los Angeles.",
     url: "https://www.brightspark-electrical.com/about",
   },
 };

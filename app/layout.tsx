@@ -18,20 +18,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.brightspark-electrical.com"),
-  title: "BrightSpark Electrical Services",
+  title: "Climavolt",
   description:
     "Licensed electricians offering residential and commercial electrical services, panel upgrades, lighting, EV chargers, and more in Los Angeles.",
   openGraph: {
-    title: "BrightSpark Electrical Services",
+    title: "Climavolt",
     description:
       "Licensed electricians offering residential and commercial electrical services, panel upgrades, lighting, EV chargers, and more in Los Angeles.",
     url: "https://www.brightspark-electrical.com",
-    siteName: "BrightSpark Electrical Services",
+    siteName: "Climavolt",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BrightSpark Electrical Services",
+    title: "Climavolt",
     description:
       "Licensed electricians offering residential and commercial electrical services, panel upgrades, lighting, EV chargers, and more in Los Angeles.",
   },

@@ -3,13 +3,13 @@ import { Container } from "@/components/layout/Container";
 import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | BrightSpark Electrical Services",
+  title: "Contact Us | Climavolt",
   description:
-    "Get in touch with BrightSpark Electrical Services for all your electrical needs. Request a free quote for residential or commercial electrical services in Los Angeles.",
+    "Get in touch with Climavolt for all your electrical needs. Request a free quote for residential or commercial electrical services in Los Angeles.",
   openGraph: {
-    title: "Contact Us | BrightSpark Electrical Services",
+    title: "Contact Us | Climavolt",
     description:
-      "Get in touch with BrightSpark Electrical Services for all your electrical needs. Request a free quote for residential or commercial electrical services in Los Angeles.",
+      "Get in touch with Climavolt for all your electrical needs. Request a free quote for residential or commercial electrical services in Los Angeles.",
     url: "https://www.brightspark-electrical.com/contact",
   },
 };

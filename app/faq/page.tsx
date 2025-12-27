@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ | BrightSpark Electrical Services",
+  title: "FAQ | Climavolt",
   description:
-    "Frequently asked questions about electrical services, pricing, licensing, and what to expect when working with BrightSpark Electrical Services in Los Angeles.",
+    "Frequently asked questions about electrical services, pricing, licensing, and what to expect when working with Climavolt in Los Angeles.",
   openGraph: {
-    title: "FAQ | BrightSpark Electrical Services",
+    title: "FAQ | Climavolt",
     description:
-      "Frequently asked questions about electrical services, pricing, licensing, and what to expect when working with BrightSpark Electrical Services in Los Angeles.",
+      "Frequently asked questions about electrical services, pricing, licensing, and what to expect when working with Climavolt in Los Angeles.",
     url: "https://www.brightspark-electrical.com/faq",
   },
 };

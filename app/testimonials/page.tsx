@@ -4,13 +4,13 @@ import { TestimonialCard } from "@/components/cards/TestimonialCard";
 import { residentialTestimonials, commercialTestimonials } from "@/constants/testimonials";
 
 export const metadata: Metadata = {
-  title: "Testimonials | BrightSpark Electrical Services",
+  title: "Testimonials | Climavolt",
   description:
-    "Read customer reviews and testimonials from satisfied residential and commercial clients. See why BrightSpark Electrical Services is trusted for quality electrical work in Los Angeles.",
+    "Read customer reviews and testimonials from satisfied residential and commercial clients. See why Climavolt is trusted for quality electrical work in Los Angeles.",
   openGraph: {
-    title: "Testimonials | BrightSpark Electrical Services",
+    title: "Testimonials | Climavolt",
     description:
-      "Read customer reviews and testimonials from satisfied residential and commercial clients. See why BrightSpark Electrical Services is trusted for quality electrical work in Los Angeles.",
+      "Read customer reviews and testimonials from satisfied residential and commercial clients. See why Climavolt is trusted for quality electrical work in Los Angeles.",
     url: "https://www.brightspark-electrical.com/testimonials",
   },
 };
