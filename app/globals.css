@@ -4,39 +4,62 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
+
+  /* Brand Colors */
+  --color-brand-primary: hsl(var(--brand-primary));
+  --color-brand-primary-foreground: hsl(var(--brand-primary-foreground));
+  --color-brand-secondary: hsl(var(--brand-secondary));
+  --color-brand-secondary-foreground: hsl(var(--brand-secondary-foreground));
+
+  /* Section Colors */
+  --color-section-primary: hsl(var(--section-primary));
+  --color-section-primary-foreground: hsl(var(--section-primary-foreground));
+  --color-section-secondary: hsl(var(--section-secondary));
+  --color-section-secondary-foreground: hsl(var(--section-secondary-foreground));
+  --color-section-accent: hsl(var(--section-accent));
+  --color-section-accent-foreground: hsl(var(--section-accent-foreground));
+
+  /* Base shadcn Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
   --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Charts */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Border Radius */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -45,20 +68,39 @@
 
 :root {
   --radius: 0.625rem;
+
+  /* Brand Colors (HSL for Tailwind opacity support) */
+  --brand-primary: 221 83% 53%; /* #1E3A8A Deep Blue */
+  --brand-primary-foreground: 0 0% 100%; /* White */
+  --brand-secondary: 358.25, 81.1%, 50.2%; /* ##e7191f Red */
+  --brand-secondary-foreground: 0 0% 100%; /* White */
+
+  /* Semantic Section Colors (aliased from brand) */
+  --section-primary: var(--brand-primary); /* Blue - main professional sections */
+  --section-primary-foreground: var(--brand-primary-foreground);
+  --section-secondary: var(--brand-primary); /* Blue - secondary professional sections */
+  --section-secondary-foreground: var(--brand-primary-foreground);
+  --section-accent: var(--brand-secondary); /* Red - CTA/promotional sections */
+  --section-accent-foreground: var(--brand-secondary-foreground);
+
+  /* Base Colors */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+
+  /* Map shadcn primary/accent to brand colors */
+  --primary: var(--brand-primary); /* Blue - main buttons/actions */
+  --primary-foreground: var(--brand-primary-foreground);
+  --accent: var(--brand-secondary); /* Red - accent/highlight */
+  --accent-foreground: var(--brand-secondary-foreground);
+
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);

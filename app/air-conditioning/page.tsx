@@ -1,8 +1,8 @@
-import { Container } from "@/components/layout/Container";
 import { OptionsBand } from "@/components/options-band";
 import { SplitFeature } from "@/components/split-feature";
 import { Section } from "@/components/ui/section";
-import HCAVRepair from "@/images/stock-images/HCAVRepair.jpg";
+import WomanAirConditioning from "@/images/stock-images/WomanAirConditioning.jpg";
+import AirConditioningClean from "@/images/stock-images/AirConditioningClean.webp";
 
 export default function HeatingPage() {
   return (
@@ -11,9 +11,11 @@ export default function HeatingPage() {
         <SplitFeature
           title={
             <>
-              <span className="text-blue-600">We Provide Quality Air Conditioning</span>
+              <span className="text-brand-primary">We Provide Quality Air Conditioning</span>
               <br />
-              <span className="text-red-600">Installation and Repair at Affordable Prices</span>
+              <span className="text-brand-secondary">
+                Installation and Repair at Affordable Prices
+              </span>
             </>
           }
           description={
@@ -26,7 +28,7 @@ export default function HeatingPage() {
               the job done promptly, efficiently, and at affordable rates.
             </p>
           }
-          imageSrc={HCAVRepair.src}
+          imageSrc={WomanAirConditioning.src}
           imageAlt="Technician working on HVAC"
           ratio="60:40"
         />
@@ -34,7 +36,7 @@ export default function HeatingPage() {
       <Section variant="muted">
         <SplitFeature
           title={
-            <span className="text-blue-600">
+            <span className="text-brand-primary">
               Our Air Conditioners are Energy Efficient and Emit Maximum Indoor Air Quality
             </span>
           }
@@ -48,18 +50,17 @@ export default function HeatingPage() {
               options!
             </p>
           }
-          imageSrc={HCAVRepair.src}
+          imageSrc={AirConditioningClean.src}
           imageAlt="Technician working on HVAC"
           ratio="60:40"
-          reverse
         />
       </Section>
-      <Section variant="blue">
+      <Section variant="secondary">
         <OptionsBand
           title="We Offer Various Air Conditioning System Options"
           images={[
-            { src: "/images/ac-opt-1.jpg", alt: "Option 1" },
-            { src: "/images/ac-opt-2.jpg", alt: "Option 2" },
+            { src: "/images/ac-opt-1.jpg", alt: "Option 1", description: "Option 1" },
+            { src: "/images/ac-opt-2.jpg", alt: "Option 2", description: "Option 2" },
           ]}
         />
       </Section>

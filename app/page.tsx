@@ -1,11 +1,10 @@
-import InformationalFooter from "@/components/cards/InformationalFooter";
 import ListWithChecks from "@/components/lists/ListWithChecks";
 import { SplitFeature } from "@/components/split-feature";
 import { Section } from "@/components/ui/section";
-import HCAVRepair from "@/images/stock-images/HCAVRepair.jpg";
-import { TwoColorHeading } from "@/components/ui/two-color-heading";
-import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
+import AirRepair from "@/images/stock-images/AirRepair.jpg";
+import AlexImage from "@/images/stock-images/Alex.jpg";
+import AlexWorking from "@/images/stock-images/AlexWorking.webp";
 
 // Example usage of AceternityHeroShell (commented out for now):
 // import { AceternityHeroShell } from "@/components/aceternity/AceternityHeroShell";
@@ -67,9 +66,9 @@ export default function Home() {
         <SplitFeature
           title={
             <>
-              <span className="text-blue-600">Call the Professionals for HVAC</span>
+              <span className="text-brand-primary">Call the Professionals for HVAC</span>
               <br />
-              <span className="text-red-600">Installation and Repair Services</span>
+              <span className="text-brand-secondary">Installation and Repair Services</span>
             </>
           }
           description={
@@ -83,7 +82,7 @@ export default function Home() {
               rebates and financing options! Contact us today to schedule a free consultation.
             </p>
           }
-          imageSrc={HCAVRepair.src}
+          imageSrc={AirRepair.src}
           imageAlt="Technician working on HVAC"
           ratio="60:40"
         />
@@ -91,7 +90,7 @@ export default function Home() {
       <Section variant="muted">
         <SplitFeature
           title={
-            <span className="text-blue-600">
+            <span className="text-brand-primary">
               Your Local HVAC Contractor Serving Southern California
             </span>
           }
@@ -105,12 +104,12 @@ export default function Home() {
               complete HVAC projects.
             </p>
           }
-          imageSrc={HCAVRepair.src}
+          imageSrc={AlexWorking.src}
           imageAlt="Technician working on HVAC"
         />
       </Section>
 
-      <Section variant="blue">
+      <Section variant="secondary">
         <SplitFeature
           title={<span>Our Complete HVAC Services</span>}
           description={
@@ -119,12 +118,12 @@ export default function Home() {
               <ListWithChecks items={rightCheckList} />
             </div>
           }
-          imageSrc={HCAVRepair.src}
+          imageSrc={AlexImage.src}
           imageAlt="Technician working on HVAC"
           ratio="60:40"
         />
       </Section>
-      <Section variant="red" className="md:py-4 py-4">
+      <Section variant="accent" className="md:py-4 py-4">
         <div className="text-center text-sm font-medium">
           Call us at <span className="font-extrabold underline">626-505-0596</span> to schedule a
           free consultation.

@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export function OptionsBand({
@@ -5,16 +6,19 @@ export function OptionsBand({
   images,
 }: {
   title: string;
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; description: string }[];
 }) {
   return (
     <div className="mx-auto max-w-6xl">
       <h3 className="text-center text-2xl font-semibold">{title}</h3>
-      <div className="mt-10 grid justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 flex flex-wrap justify-center gap-6">
         {images.map((img, index) => (
           <div
             key={index}
-            className="w-full max-w-[260px] overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/15"
+            className={cn(
+              "w-full min-w-[200px] flex-1 overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/15 sm:max-w-[calc(50%-0.75rem)]",
+              images.length > 4 ? "lg:max-w-[calc(25%-1.125rem)]" : undefined
+            )}
           >
             <Image
               src={img.src}

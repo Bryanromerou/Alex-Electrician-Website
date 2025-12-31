@@ -13,8 +13,8 @@ interface TwoColorHeadingProps {
 export function TwoColorHeading({
   part1,
   part2,
-  color1 = "text-blue-600",
-  color2 = "text-red-600",
+  color1 = "text-brand-primary",
+  color2 = "text-brand-secondary",
   className,
 }: Readonly<TwoColorHeadingProps>) {
   const sizeClasses = {

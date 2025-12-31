@@ -10,9 +10,11 @@ export default function HeatingPage() {
         <SplitFeature
           title={
             <>
-              <span className="text-blue-600">We Have the Knowledge and Expertise</span>
+              <span className="text-brand-primary">We Have the Knowledge and Expertise</span>
               <br />
-              <span className="text-red-600">to Provide Quality Heating System Services</span>
+              <span className="text-brand-secondary">
+                to Provide Quality Heating System Services
+              </span>
             </>
           }
           description={
@@ -31,8 +33,7 @@ export default function HeatingPage() {
           ratio="75:25"
         />
       </Section>
-
-      <Section variant="blue">
+      <Section variant="secondary">
         <OptionsBand
           title="We Offer Various Heating System Options"
           images={[
@@ -44,7 +45,7 @@ export default function HeatingPage() {
         />
       </Section>
 
-      <Section variant="red" className="md:py-4 py-4">
+      <Section variant="accent" className="md:py-4 py-4">
         <p className="text-center text-sm font-medium">
           Call us at <span className="font-extrabold underline">626-505-0596</span> for more
           information about our heating services or to schedule a free consultation.

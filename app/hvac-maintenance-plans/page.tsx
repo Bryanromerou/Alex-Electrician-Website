@@ -1,5 +1,7 @@
 import { SplitFeature } from "@/components/split-feature";
 import HCAVRepair from "@/images/stock-images/HCAVRepair.jpg";
+import AirInspection from "@/images/stock-images/AirInspection.webp";
+import AirConditioningClean from "@/images/stock-images/AirConditioningClean2.webp";
 import { Section } from "@/components/ui/section";
 import { ReactNode } from "react";
 import ListWithChecks from "@/components/lists/ListWithChecks";
@@ -77,9 +79,11 @@ const Page = () => {
         <SplitFeature
           title={
             <>
-              <span className="text-blue-600">We Conduct Thorough HVAC</span>
+              <span className="text-brand-primary">We Conduct Thorough HVAC</span>
               <br />
-              <span className="text-red-600">Preventive Maintenance Inspections and Cleanings</span>
+              <span className="text-brand-secondary">
+                Preventive Maintenance Inspections and Cleanings
+              </span>
             </>
           }
           description={
@@ -102,23 +106,23 @@ const Page = () => {
       </Section>
       <Section variant="muted">
         <SplitFeature
-          title={<span className="text-blue-600">Our Heating System Maintenance Program</span>}
+          title={<span className="text-brand-primary">Our Heating System Maintenance Program</span>}
           description={<ListWithChecks items={heatingList} />}
-          imageSrc={HCAVRepair.src}
+          imageSrc={AirInspection.src}
           imageAlt="Technician working on HVAC"
           ratio="60:40"
         />
       </Section>
-      <Section variant="blue">
+      <Section variant="secondary">
         <SplitFeature
           title={<span>Our Air Conditioning System Maintenance Program</span>}
           description={<ListWithChecks items={airConditioningList} className="text-white" />}
-          imageSrc={HCAVRepair.src}
+          imageSrc={AirConditioningClean.src}
           imageAlt="Technician working on HVAC"
           ratio="60:40"
         />
       </Section>
-      <Section variant="red" className="md:py-4 py-4">
+      <Section variant="accent" className="md:py-4 py-4">
         <p className="text-center text-sm font-medium">
           Call us at{" "}
           <a href="tel:6265050596" className="font-extrabold underline">

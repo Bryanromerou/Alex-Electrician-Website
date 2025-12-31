@@ -1,12 +1,13 @@
 import { cn } from "@/lib/utils";
 
-type Variant = "default" | "muted" | "blue" | "red";
+type Variant = "default" | "muted" | "primary" | "secondary" | "accent";
 
 const variants: Record<Variant, string> = {
   default: "bg-background text-foreground",
   muted: "bg-muted text-foreground",
-  blue: "bg-blue-700 text-white",
-  red: "bg-red-600 text-white",
+  primary: "bg-section-primary text-section-primary-foreground",
+  secondary: "bg-section-secondary text-section-secondary-foreground",
+  accent: "bg-section-accent text-section-accent-foreground",
 };
 
 export function Section({
