@@ -73,21 +73,19 @@ export default function Home() {
             </>
           }
           description={
-            <>
-              <p>
-                If you want reliable and efficient heating unit installation or repair, call our
-                team of professionals at A-Z Heating & Air Conditioning Inc, an HVAC company based
-                out of Azusa, CA. With over 30 years of experience working with heating units, we
-                have the knowledge and expertise to get the job done and done correctly. Our heating
-                services include installations, replacements, repairs, and preventive maintenance.
-                If you have an old heating system, we can replace it with an energy-efficient unit.
-                Ask about our rebates and financing options! Contact us today to schedule a free
-                consultation.
-              </p>
-            </>
+            <p>
+              If you want reliable and efficient heating unit installation or repair, call our team
+              of professionals at A-Z Heating & Air Conditioning Inc, an HVAC company based out of
+              Azusa, CA. With over 30 years of experience working with heating units, we have the
+              knowledge and expertise to get the job done and done correctly. Our heating services
+              include installations, replacements, repairs, and preventive maintenance. If you have
+              an old heating system, we can replace it with an energy-efficient unit. Ask about our
+              rebates and financing options! Contact us today to schedule a free consultation.
+            </p>
           }
           imageSrc={HCAVRepair.src}
           imageAlt="Technician working on HVAC"
+          ratio="60:40"
         />
       </Section>
       <Section variant="muted">
@@ -132,7 +130,6 @@ export default function Home() {
           free consultation.
         </div>
       </Section>
-      <InformationalFooter />
     </main>
   );
 }

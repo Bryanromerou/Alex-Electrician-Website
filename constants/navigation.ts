@@ -14,6 +14,10 @@ export const mainNavLinks: NavLink[] = [
     label: "Air Conditioning",
   },
   {
+    href: "/hvac-maintenance-plans",
+    label: "Maintenance Plans",
+  },
+  {
     href: "/electrical",
     label: "Electrical",
   },
@@ -21,25 +25,13 @@ export const mainNavLinks: NavLink[] = [
     href: "/services",
     label: "Services",
   },
-  // {
-  //   href: "/testimonials",
-  //   label: "Testimonials",
-  // },
   {
     href: "/gallery",
     label: "Gallery",
   },
-  // {
-  //   href: "/faq",
-  //   label: "FAQ",
-  // },
   {
     href: "/contact",
     label: "Contact",
-  },
-  {
-    href: "/temp",
-    label: "Temp",
   },
 ];
 
@@ -57,10 +49,6 @@ export const footerLinks: NavLink[] = [
     label: "Services",
   },
   {
-    href: "/testimonials",
-    label: "Testimonials",
-  },
-  {
     href: "/gallery",
     label: "Gallery",
   },
@@ -71,9 +59,5 @@ export const footerLinks: NavLink[] = [
   {
     href: "/contact",
     label: "Contact",
-  },
-  {
-    href: "/privacy-policy",
-    label: "Privacy Policy",
   },
 ];
