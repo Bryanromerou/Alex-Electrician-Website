@@ -68,11 +68,13 @@
 
 :root {
   --radius: 0.625rem;
+  /* hsl(209.72, 84.13%, 50.59%) */
+  /* hsl(29.72, 84.13%, 50.59%) */
 
   /* Brand Colors (HSL for Tailwind opacity support) */
-  --brand-primary: 221 83% 53%; /* #1E3A8A Deep Blue */
+  --brand-primary: 209.72, 84.13%, 50.59%; /* #1E3A8A Deep Blue */
   --brand-primary-foreground: 0 0% 100%; /* White */
-  --brand-secondary: 358.25, 81.1%, 50.2%; /* ##e7191f Red */
+  --brand-secondary: 29.72, 84.13%, 50.59%; /* ##e7191f Red */
   --brand-secondary-foreground: 0 0% 100%; /* White */
 
   /* Semantic Section Colors (aliased from brand) */

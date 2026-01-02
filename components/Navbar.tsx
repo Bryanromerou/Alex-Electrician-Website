@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone } from "lucide-react";
 import { mainNavLinks } from "@/constants/navigation";
 import Logo from "@/images/ClimaVoltIcon.png";
+import ClimavoltText from "@/images/ClimaVoltLogoWords.png";
 
 export function Navbar() {
   return (
@@ -30,7 +31,7 @@ export function Navbar() {
                       <Link
                         key={index}
                         href={item.href}
-                        className="rounded-md px-3 py-2 text-sm font-semibold text-brand-secondary hover:bg-brand-secondary/10"
+                        className="rounded-md px-3 py-2 text-sm font-bold text-brand-secondary hover:bg-brand-secondary/10"
                       >
                         {item.label}
                       </Link>
@@ -52,7 +53,13 @@ export function Navbar() {
                   />
                 </div>
 
-                <span className="text-xs font-semibold text-brand-primary">Climavolt</span>
+                <div className="relative w-16">
+                  <img
+                    src={ClimavoltText.src}
+                    alt="Climavolt"
+                    className="object-contain w-full h-full"
+                  />
+                </div>
               </Link>
             </div>
 
@@ -70,7 +77,7 @@ export function Navbar() {
         {/* DESKTOP HEADER (your previous layout) */}
         <div className="hidden md:flex items-stretch gap-6 ">
           {/* Left: logo block */}
-          <div className="flex shrink-0 items-center py-4">
+          <div className="flex shrink-0 py-4">
             <Link href="/" className="flex flex-col items-center gap-2">
               <div className="relative h-16 w-16 overflow-hidden rounded-full">
                 <Image
@@ -80,14 +87,20 @@ export function Navbar() {
                   className="object-contain w-full h-full"
                 />
               </div>
-              <span className="text-xs font-semibold text-brand-secondary">Climavolt</span>
+              <div className="relative w-16">
+                <img
+                  src={ClimavoltText.src}
+                  alt="Climavolt"
+                  className="object-contain w-full h-full"
+                />
+              </div>
             </Link>
           </div>
 
           {/* Right: top strip + nav */}
           <div className="flex min-w-0 flex-1 flex-col">
             <div className="relative flex items-center justify-end gap-4 overflow-hidden bg-brand-primary px-4 py-3 text-white">
-              <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-white [clip-path:polygon(0_0,100%_0,35%_100%,0_100%)]" />
+              <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-white [clip-path:polygon(0_0,00%_0,45%_100%,0_100%)]" />
 
               <div className="ml-16 flex items-center gap-3 text-sm">
                 <span className="opacity-90">CA ST LIC # 1121119</span>
@@ -102,12 +115,12 @@ export function Navbar() {
             </div>
 
             <div className="flex items-center justify-center py-4 flex-grow-1">
-              <nav className="flex items-center gap-8">
+              <nav className="flex items-center gap-8 flex-wrap">
                 {mainNavLinks.map((item, index) => (
                   <Link
                     key={index}
                     href={item.href}
-                    className="relative text-sm font-semibold tracking-wide text-brand-secondary hover:text-brand-secondary/90"
+                    className="relative text-sm font-bold tracking-wide text-brand-secondary hover:text-brand-secondary/90 "
                   >
                     {item.label}
                   </Link>

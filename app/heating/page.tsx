@@ -2,6 +2,7 @@ import { OptionsBand } from "@/components/options-band";
 import { SplitFeature } from "@/components/split-feature";
 import { Section } from "@/components/ui/section";
 import HCAVRepair from "@/images/stock-images/HCAVRepair.jpg";
+import { HEATING_OPTIONS } from "../temp/constants";
 
 export default function HeatingPage() {
   return (
@@ -36,12 +37,12 @@ export default function HeatingPage() {
       <Section variant="secondary">
         <OptionsBand
           title="We Offer Various Heating System Options"
-          images={[
-            { src: "/images/ac-opt-1.jpg", alt: "Option 1" },
-            { src: "/images/ac-opt-2.jpg", alt: "Option 2" },
-            { src: "/images/heating-opt-1.jpg", alt: "Option 3" },
-            { src: "/images/heating-opt-2.jpg", alt: "Option 4" },
-          ]}
+          images={HEATING_OPTIONS.map((option) => ({
+            src: option.imageSrc,
+            alt: option.imageAlt,
+            description: option.description,
+            title: option.title,
+          }))}
         />
       </Section>
 

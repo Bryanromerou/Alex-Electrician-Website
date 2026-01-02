@@ -6,7 +6,7 @@ export function OptionsBand({
   images,
 }: {
   title: string;
-  images: { src: string; alt: string; description: string }[];
+  images: { src: string; alt: string; description: string; title: string }[];
 }) {
   return (
     <div className="mx-auto max-w-6xl">

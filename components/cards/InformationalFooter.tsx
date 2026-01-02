@@ -6,7 +6,7 @@ import OACIcon from "@/images/icons/oac_alt.png";
 
 const InformationalFooter = () => {
   return (
-    <div className="flex flex-col gap-2 items-center justify-center my-4">
+    <div className="flex flex-col gap-2 items-center justify-center my-8">
       <div className="flex flex-row gap-2">
         <p>
           Phone Number: <span className="underline">626-505-0596</span>
