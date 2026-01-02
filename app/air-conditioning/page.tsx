@@ -1,7 +1,7 @@
 import { OptionsBand } from "@/components/options-band";
 import { SplitFeature } from "@/components/split-feature";
 import { Section } from "@/components/ui/section";
-import WomanAirConditioning from "@/images/stock-images/WomanAirConditioning.jpg";
+import WomanAirConditioning from "@/images/stock-images/WomanAirConditioning.webp";
 import AirConditioningClean from "@/images/stock-images/AirConditioningClean.webp";
 import { AIR_CONDITIONING_OPTIONS } from "../temp/constants";
 
