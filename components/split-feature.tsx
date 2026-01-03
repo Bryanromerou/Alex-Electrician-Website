@@ -47,14 +47,14 @@ export function SplitFeature({
         <div className="mt-4 text-base leading-7 text-muted-foreground">{description}</div>
       </div>
 
-      <div className={cn("justify-self-end md:w-full", imageSpan)}>
+      <div className={cn("justify-self-end w-full", imageSpan)}>
         <div className="overflow-hidden rounded-2xl border bg-background shadow-sm">
           <Image
             src={imageSrc}
             alt={imageAlt}
             width={720}
             height={480}
-            className="h-[260px] w-[520px] object-cover md:h-[320px] md:w-full "
+            className="h-[260px] w-full object-cover md:h-[320px] h-[360px]"
             priority={false}
           />
         </div>
