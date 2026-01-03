@@ -64,6 +64,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Custom Animations */
+  --animate-fade-in-up: fade-in-up 0.5s ease-out forwards;
 }
 
 :root {
@@ -162,5 +165,16 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
