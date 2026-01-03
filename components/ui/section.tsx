@@ -28,7 +28,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={cn(variants[variant], "py-14 md:py-20 justify-center flex", className)}
+      className={cn(variants[variant], "py-14 md:py-20 justify-center flex px-4", className)}
     >
       <div className={cn(fullBleed ? "container" : "", containerClassName)}>{children}</div>
     </section>
