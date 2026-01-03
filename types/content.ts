@@ -76,3 +76,10 @@ export interface ContactFormData {
   message: string;
   preferredTime?: string;
 }
+
+export interface ImageOption {
+  title: string;
+  imageSrc: string;
+  imageAlt: string;
+  description: string;
+}

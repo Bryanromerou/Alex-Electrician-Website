@@ -3,7 +3,7 @@ import { SplitFeature } from "@/components/split-feature";
 import { Section } from "@/components/ui/section";
 import WomanAirConditioning from "@/images/stock-images/WomanAirConditioning.webp";
 import AirConditioningClean from "@/images/stock-images/AirConditioningClean.webp";
-import { AIR_CONDITIONING_OPTIONS } from "../temp/constants";
+import { AIR_CONDITIONING_OPTIONS } from "@/constants/services";
 
 export default function HeatingPage() {
   return (
@@ -60,10 +60,7 @@ export default function HeatingPage() {
         <OptionsBand
           title="We Offer Various Air Conditioning System Options"
           images={AIR_CONDITIONING_OPTIONS.map((option) => ({
-            src: option.imageSrc,
-            alt: option.imageAlt,
-            description: option.description,
-            title: option.title,
+            ...option,
           }))}
         />
       </Section>

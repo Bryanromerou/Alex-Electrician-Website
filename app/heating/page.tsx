@@ -2,7 +2,7 @@ import { OptionsBand } from "@/components/options-band";
 import { SplitFeature } from "@/components/split-feature";
 import { Section } from "@/components/ui/section";
 import HCAVRepair from "@/images/stock-images/HCAVRepair.jpg";
-import { HEATING_OPTIONS } from "../temp/constants";
+import { HEATING_OPTIONS } from "@/constants/services";
 
 export default function HeatingPage() {
   return (
@@ -38,10 +38,7 @@ export default function HeatingPage() {
         <OptionsBand
           title="We Offer Various Heating System Options"
           images={HEATING_OPTIONS.map((option) => ({
-            src: option.imageSrc,
-            alt: option.imageAlt,
-            description: option.description,
-            title: option.title,
+            ...option,
           }))}
         />
       </Section>
