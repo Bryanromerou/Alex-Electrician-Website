@@ -7,11 +7,11 @@ import OACIcon from "@/images/icons/oac_alt.png";
 const InformationalFooter = () => {
   return (
     <div className="flex flex-col gap-2 items-center justify-center my-8">
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-2 items-center">
         <p>
           Phone Number: <span className="underline">626-505-0596</span>
         </p>
-        |
+        <div className="w-px self-stretch bg-gray-400"></div>
         <p>
           Email: <span className="underline">info@azheatingandair.com</span>
         </p>
@@ -19,11 +19,11 @@ const InformationalFooter = () => {
       <p>Hours: Available 24/7</p>
       <p>CA ST LIC # 1121119</p>
       <div className="flex flex-row gap-2">
-        <img src={CashIcon.src} alt="Cash" className="w-12 h-fit" />
-        <img src={VisaIcon.src} alt="Visa" className="w-12 h-fit" />
-        <img src={MastercardIcon.src} alt="Mastercard" className="w-12 h-fit" />
-        <img src={Check.src} alt="Check" className="w-12 h-fit" />
-        <img src={OACIcon.src} alt="OAC" className="w-12 h-fit" />
+        <img src={CashIcon.src} alt="Cash" className="w-12 h-12 object-contain" />
+        <img src={VisaIcon.src} alt="Visa" className="w-12 h-12 object-contain" />
+        <img src={MastercardIcon.src} alt="Mastercard" className="w-12 h-12 object-contain" />
+        <img src={Check.src} alt="Check" className="w-12 h-12 object-contain" />
+        <img src={OACIcon.src} alt="OAC" className="w-12 h-12 object-contain" />
       </div>
     </div>
   );
