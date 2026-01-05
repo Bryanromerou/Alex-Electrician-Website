@@ -39,18 +39,22 @@ export default function HeatingPage() {
         </FadeInWhenVisible>
       </Section>
       <Section variant="secondary">
-        <OptionsBand
-          title="We Offer Various Heating System Options"
-          images={HEATING_OPTIONS.map((option) => ({
-            ...option,
-          }))}
-        />
+        <FadeInWhenVisible>
+          <OptionsBand
+            title="We Offer Various Heating System Options"
+            images={HEATING_OPTIONS.map((option) => ({
+              ...option,
+            }))}
+          />
+        </FadeInWhenVisible>
       </Section>
       <Section variant="accent" className="md:py-4 py-4">
-        <p className="text-center text-sm font-medium">
-          Call us at <span className="font-extrabold underline">626-505-0596</span> for more
-          information about our heating services or to schedule a free consultation.
-        </p>
+        <FadeInWhenVisible>
+          <p className="text-center text-sm font-medium">
+            Call us at <span className="font-extrabold underline">626-505-0596</span> for more
+            information about our heating services or to schedule a free consultation.
+          </p>
+        </FadeInWhenVisible>
       </Section>
     </main>
   );

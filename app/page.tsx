@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import AirRepair from "@/images/stock-images/AirRepair.jpg";
 import AlexImage from "@/images/stock-images/Alex.jpg";
 import AlexWorking from "@/images/stock-images/AlexWorking.webp";
+import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 
 // Example usage of AceternityHeroShell (commented out for now):
 // import { AceternityHeroShell } from "@/components/aceternity/AceternityHeroShell";
@@ -63,65 +64,72 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
       <Section variant="default">
-        <SplitFeature
-          title={
-            <>
-              <span className="text-brand-primary">Call the Professionals for HVAC</span>
-              <br />
-              <span className="text-brand-secondary">Installation and Repair Services</span>
-            </>
-          }
-          description={
-            <p>
-              If you want reliable and efficient heating unit installation or repair, call our team
-              of professionals at A-Z Heating & Air Conditioning Inc, an HVAC company based out of
-              Azusa, CA. With over 30 years of experience working with heating units, we have the
-              knowledge and expertise to get the job done and done correctly. Our heating services
-              include installations, replacements, repairs, and preventive maintenance. If you have
-              an old heating system, we can replace it with an energy-efficient unit. Ask about our
-              rebates and financing options! Contact us today to schedule a free consultation.
-            </p>
-          }
-          imageSrc={AirRepair.src}
-          imageAlt="Technician working on HVAC"
-          ratio="60:40"
-        />
+        <FadeInWhenVisible>
+          <SplitFeature
+            title={
+              <>
+                <span className="text-brand-primary">Call the Professionals for HVAC</span>
+                <br />
+                <span className="text-brand-secondary">Installation and Repair Services</span>
+              </>
+            }
+            description={
+              <p>
+                If you want reliable and efficient heating unit installation or repair, call our
+                team of professionals at A-Z Heating & Air Conditioning Inc, an HVAC company based
+                out of Azusa, CA. With over 30 years of experience working with heating units, we
+                have the knowledge and expertise to get the job done and done correctly. Our heating
+                services include installations, replacements, repairs, and preventive maintenance.
+                If you have an old heating system, we can replace it with an energy-efficient unit.
+                Ask about our rebates and financing options! Contact us today to schedule a free
+                consultation.
+              </p>
+            }
+            imageSrc={AirRepair.src}
+            imageAlt="Technician working on HVAC"
+            ratio="60:40"
+          />
+        </FadeInWhenVisible>
       </Section>
       <Section variant="muted">
-        <SplitFeature
-          title={
-            <span className="text-brand-primary">
-              Your Local HVAC Contractor Serving Southern California
-            </span>
-          }
-          description={
-            <p>
-              We are located in Azusa, CA, and provide services to residential and light commercial
-              businesses in Los Angeles, Orange, Riverside, and San Bernardino counties. We have
-              over 30 years of experience in the HVAC and electrical industries. Having lived and
-              worked in this area for all those years, we are familiar with the communities, homes,
-              and businesses and the required permits and regulations to accurately and efficiently
-              complete HVAC projects.
-            </p>
-          }
-          imageSrc={AlexWorking.src}
-          imageAlt="Technician working on HVAC"
-        />
+        <FadeInWhenVisible>
+          <SplitFeature
+            title={
+              <span className="text-brand-primary">
+                Your Local HVAC Contractor Serving Southern California
+              </span>
+            }
+            description={
+              <p>
+                We are located in Azusa, CA, and provide services to residential and light
+                commercial businesses in Los Angeles, Orange, Riverside, and San Bernardino
+                counties. We have over 30 years of experience in the HVAC and electrical industries.
+                Having lived and worked in this area for all those years, we are familiar with the
+                communities, homes, and businesses and the required permits and regulations to
+                accurately and efficiently complete HVAC projects.
+              </p>
+            }
+            imageSrc={AlexWorking.src}
+            imageAlt="Technician working on HVAC"
+          />
+        </FadeInWhenVisible>
       </Section>
 
       <Section variant="secondary">
-        <SplitFeature
-          title={<span>Our Complete HVAC Services</span>}
-          description={
-            <div className="flex flex-row gap-2 text-white">
-              <ListWithChecks items={leftCheckList} />
-              <ListWithChecks items={rightCheckList} />
-            </div>
-          }
-          imageSrc={AlexImage.src}
-          imageAlt="Technician working on HVAC"
-          ratio="60:40"
-        />
+        <FadeInWhenVisible>
+          <SplitFeature
+            title={<span>Our Complete HVAC Services</span>}
+            description={
+              <div className="flex flex-row gap-2 text-white">
+                <ListWithChecks items={leftCheckList} />
+                <ListWithChecks items={rightCheckList} />
+              </div>
+            }
+            imageSrc={AlexImage.src}
+            imageAlt="Technician working on HVAC"
+            ratio="60:40"
+          />
+        </FadeInWhenVisible>
       </Section>
       <Section variant="accent" className="md:py-4 py-4">
         <div className="text-center text-sm font-medium">

@@ -32,7 +32,7 @@ export default function OptionItem({
   return (
     <div
       className={cn(
-        "w-full min-w-[300px] flex-1 overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/15 sm:max-w-[calc(50%-0.75rem)] relative",
+        "w-full min-w-[270px] flex-1 overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/15 sm:max-w-[calc(40%-1rem)] relative",
         className
       )}
       onMouseEnter={onMouseEnter}
@@ -55,6 +55,12 @@ export default function OptionItem({
         <h3 className="text-xl font-bold text-brand-primary">{title}</h3>
         <p className="text-black/80 text-sm">{description}</p>
       </div>
+      {isMobile && (
+        <div className="bg-white/80 p-4 h-full">
+          <h3 className="text-xl font-bold text-brand-primary">{title}</h3>
+          <p className="text-black/80 text-sm">{description}</p>
+        </div>
+      )}
     </div>
   );
 }
