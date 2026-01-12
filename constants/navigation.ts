@@ -18,7 +18,7 @@ export const mainNavLinks: NavLink[] = [
     label: "Maintenance Plans",
   },
   {
-    href: "/services",
+    href: "/electrical",
     label: "Electrical",
   },
   {

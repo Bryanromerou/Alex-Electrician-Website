@@ -97,3 +97,43 @@ export const AIR_CONDITIONING_OPTIONS: ImageOption[] = [
   MINI_SPLIT_IMAGE_OPTION,
   HEATING_PUMP_IMAGE_OPTION,
 ];
+
+// Electrical options - using placeholder images until electrical-specific images are added
+export const PANEL_UPGRADE_IMAGE_OPTION: ImageOption = {
+  title: "Panel Upgrades",
+  imageSrc: GasFurnaces.src, // Placeholder
+  imageAlt: "Electrical Panel Upgrade",
+  description:
+    "Modernize your electrical system with upgraded breaker panels for improved safety, capacity, and code compliance.",
+};
+
+export const WIRING_IMAGE_OPTION: ImageOption = {
+  title: "Wiring & Rewiring",
+  imageSrc: Furnaces.src, // Placeholder
+  imageAlt: "Electrical Wiring",
+  description:
+    "Professional wiring installation and complete home rewiring services to ensure safety and meet modern electrical demands.",
+};
+
+export const EV_CHARGER_IMAGE_OPTION: ImageOption = {
+  title: "EV Charger Installation",
+  imageSrc: HeatPumps.src, // Placeholder
+  imageAlt: "EV Charger Installation",
+  description:
+    "Professional installation of electric vehicle charging stations for your home or business with proper electrical infrastructure.",
+};
+
+export const LIGHTING_IMAGE_OPTION: ImageOption = {
+  title: "Lighting Solutions",
+  imageSrc: MiniSplits.src, // Placeholder
+  imageAlt: "Lighting Installation",
+  description:
+    "Expert installation of indoor and outdoor lighting solutions to enhance your home's ambiance, security, and energy efficiency.",
+};
+
+export const ELECTRICAL_OPTIONS: ImageOption[] = [
+  PANEL_UPGRADE_IMAGE_OPTION,
+  WIRING_IMAGE_OPTION,
+  EV_CHARGER_IMAGE_OPTION,
+  LIGHTING_IMAGE_OPTION,
+];
