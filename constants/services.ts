@@ -3,6 +3,9 @@ import Furnaces from "@/images/stock-images/furnaces.webp";
 import MiniSplits from "@/images/stock-images/mini-splits.webp";
 import HeatPumps from "@/images/stock-images/heat-pumps.webp";
 import GasFurnaces from "@/images/stock-images/gas-furnaces.webp";
+import ElectricalImage from "@/images/stock-images/Electrical-Image-working.jpg";
+import EVCharger from "@/images/stock-images/EV-Charger.jpg";
+import WiringImage from "@/images/stock-images/Electrical-Image-1.jpg";
 
 export const services: ServiceItem[] = [
   {
@@ -101,7 +104,7 @@ export const AIR_CONDITIONING_OPTIONS: ImageOption[] = [
 // Electrical options - using placeholder images until electrical-specific images are added
 export const PANEL_UPGRADE_IMAGE_OPTION: ImageOption = {
   title: "Panel Upgrades",
-  imageSrc: GasFurnaces.src, // Placeholder
+  imageSrc: ElectricalImage.src, // Placeholder
   imageAlt: "Electrical Panel Upgrade",
   description:
     "Modernize your electrical system with upgraded breaker panels for improved safety, capacity, and code compliance.",
@@ -109,7 +112,7 @@ export const PANEL_UPGRADE_IMAGE_OPTION: ImageOption = {
 
 export const WIRING_IMAGE_OPTION: ImageOption = {
   title: "Wiring & Rewiring",
-  imageSrc: Furnaces.src, // Placeholder
+  imageSrc: WiringImage.src, // Placeholder
   imageAlt: "Electrical Wiring",
   description:
     "Professional wiring installation and complete home rewiring services to ensure safety and meet modern electrical demands.",
@@ -117,23 +120,14 @@ export const WIRING_IMAGE_OPTION: ImageOption = {
 
 export const EV_CHARGER_IMAGE_OPTION: ImageOption = {
   title: "EV Charger Installation",
-  imageSrc: HeatPumps.src, // Placeholder
+  imageSrc: EVCharger.src, // Placeholder
   imageAlt: "EV Charger Installation",
   description:
     "Professional installation of electric vehicle charging stations for your home or business with proper electrical infrastructure.",
-};
-
-export const LIGHTING_IMAGE_OPTION: ImageOption = {
-  title: "Lighting Solutions",
-  imageSrc: MiniSplits.src, // Placeholder
-  imageAlt: "Lighting Installation",
-  description:
-    "Expert installation of indoor and outdoor lighting solutions to enhance your home's ambiance, security, and energy efficiency.",
 };
 
 export const ELECTRICAL_OPTIONS: ImageOption[] = [
   PANEL_UPGRADE_IMAGE_OPTION,
   WIRING_IMAGE_OPTION,
   EV_CHARGER_IMAGE_OPTION,
-  LIGHTING_IMAGE_OPTION,
 ];

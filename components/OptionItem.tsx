@@ -32,20 +32,21 @@ export default function OptionItem({
   return (
     <div
       className={cn(
-        "w-full min-w-[270px] flex-1 overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/15 sm:max-w-[calc(40%-1rem)] relative",
+        "w-full min-w-[270px] flex-1 overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/15 sm:max-w-[calc(33.333%-1rem)] relative",
         className
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       role="button"
     >
-      <Image
-        src={imageSrc}
-        alt={imageAlt}
-        width={520}
-        height={360}
-        className={cn("w-full object-cover", imageClassName)}
-      />
+      <div className="relative aspect-[4/3]">
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          className={cn("object-cover", imageClassName)}
+        />
+      </div>
       <div
         className={cn(
           "absolute inset-0 bg-white/80 opacity-0 transition-opacity duration-300 p-4",

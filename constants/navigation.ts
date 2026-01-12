@@ -14,12 +14,12 @@ export const mainNavLinks: NavLink[] = [
     label: "Air Conditioning",
   },
   {
-    href: "/hvac-maintenance-plans",
-    label: "Maintenance Plans",
-  },
-  {
     href: "/electrical",
     label: "Electrical",
+  },
+  {
+    href: "/hvac-maintenance-plans",
+    label: "Maintenance Plans",
   },
   {
     href: "/services",
