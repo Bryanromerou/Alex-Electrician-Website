@@ -25,10 +25,10 @@ export const mainNavLinks: NavLink[] = [
     href: "/services",
     label: "Services",
   },
-  {
-    href: "/gallery",
-    label: "Gallery",
-  },
+  // {
+  //   href: "/gallery",
+  //   label: "Gallery",
+  // },
   {
     href: "/contact",
     label: "Contact",
@@ -48,10 +48,10 @@ export const footerLinks: NavLink[] = [
     href: "/services",
     label: "Services",
   },
-  {
-    href: "/gallery",
-    label: "Gallery",
-  },
+  // {
+  //   href: "/gallery",
+  //   label: "Gallery",
+  // },
   {
     href: "/faq",
     label: "FAQ",
